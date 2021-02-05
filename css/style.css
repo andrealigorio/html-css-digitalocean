@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 /* debug */
-.debug [class="col-*"] {
+.debug [class*="col-"] {
   border: 1px solid red;
 }
 .debug .row {
