@@ -3,73 +3,73 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>DigitalOcean</title>
   </head>
-  <body class="debug">
+  <body>
     <header>
       <!-- header top -->
       <div class="header_top">
-        <nav class="navbar navbar-default ms_navbar">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">
-                <img src="" alt="DigitalOcean">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                  </ul>
-                </li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                  </ul>
-                </li>
-                <li><a href="#">Link</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                  </ul>
-                </li>
-                <li><a href="#">Link</a></li>
-                <button type="submit" class="btn btn-default">Submit</button>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <!-- Jumbotron -->
-      <div class="jumbo">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-7">
-              <div class="jumbo_text">
-                <h1>LOREM IPSUM</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+            <div class="col-xs-3">
+              <div class="logo_header">
+                <a href="#">
+                  <img id="logo" src="img/logo.png" alt="DigitalOcean">
+                </a>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-5">
-              <div class="form_box">
-                <h3>LOREM IPSUM</h3>
-                <h3>LOREM</h3>
+            <div class="menu_inline hidden-xs hidden-sm">
+              <div class="col-xs-5">
+                <ul class="list-inline">
+                  <li><a href="#">Products <span class="caret"></span></a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li><a href="#">Community <span class="caret"></span></a></li>
+                  <li><a href="#">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-4 text-right">
+                <ul class="list-inline">
+                  <li><a href="#">Docs</a></li>
+                  <li><a href="#">Support <span class="caret"></span></a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><button class="btn btn_white" href="#">Sign Up</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="hamburger_icon visible-xs visible-sm text-right">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Jumbotron -->
+      <div class="jumbo ms_padding_tb">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-7">
+              <div class="jumbo_text">
+                <h1>The simplest cloud platform for developers & teams</h1>
+                <p>Deploy, manage scale cloud applicatioms faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5">
+              <div class="form_box text-center">
+                <h3>Deploy your app in seconds.</h3>
+                <h3>Get started now.</h3>
                 <form>
                   <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
-                    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+                    <button type="button" class="btn btn-default btn-lg btn-block btn_blue">Create your account</button>
+                    <button type="button" class="btn btn-default btn-lg btn-block btn_google"><img class="google_icon" src="img/google-icon.png" alt="Google Icon"> Sign up with google</button>
                   </div>
                 </form>
-                <p class="ms_p_xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <p class="ms_p_xs">By signing up your agree to the <a href="#">Terms of service</a>.</p>
               </div>
             </div>
           </div>

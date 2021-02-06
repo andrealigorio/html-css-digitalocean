@@ -3,6 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Inter', sans-serif;
+  margin-top: 80px;
+}
+h1, h2, h3 {
+  font-weight: 600;
+}
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.5em;
+}
+.ms_p_small {
+  font-size: 1.2em;
+}
+.ms_p_xs {
+  font-size: 1em;
+}
 /* debug */
 .debug [class*="col-"] {
   border: 1px solid red;
@@ -14,3 +39,134 @@
   background-color: lightblue;
 }
 /* fine debug */
+
+/* utility */
+.ms_padding_tb {
+  padding: 50px 0;
+}
+/* buttons */
+.btn_white {
+  background-color: white;
+  color: #006aff;
+  border: 1px solid #006aff;
+}
+.btn_white:hover {
+  background-color: #006aff;
+  color: white;
+}
+.btn_blue {
+  background-color: #579aff;
+  color: white;
+}
+.btn_blue:hover {
+  background-color: #006aff;
+  color: white;
+}
+.btn_google {
+  border: 1px solid white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.btn_google:hover {
+  color: #006aff;
+  border: 1px solid #006aff;
+  background-color: white;
+}
+/* fine utility */
+/* Header */
+.header_top {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+}
+.logo_header {
+  width: 180px;
+}
+#logo {
+  width: 100%;
+  padding-bottom: 7px;
+}
+.menu_inline ul {
+  display: inline-block;
+}
+.menu_inline li {
+  padding: 0 8px;
+}
+.menu_inline li a {
+  color: black;
+}
+.menu_inline li a:hover {
+  color: #006aff;
+  text-decoration: none;
+}
+.hamburger_icon i {
+  font-size: 40px;
+  color: #006aff;
+  line-height: 80px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+/* Jumbotron */
+.jumbo {
+  background-image: url(../img/jumbo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0;
+}
+.jumbo_text {
+  padding-right: 20px;
+}
+.jumbo_text h1 {
+  color: white;
+}
+.jumbo_text p {
+  color: #bbcbfd;
+}
+.form_box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+.form_box h3:last-of-type {
+  color: #006aff;
+}
+.form_box form input {
+  margin: 10px 0;
+  height: 50px;
+}
+.form_box button {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.form_box p > a {
+  color: #006aff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.form_box .btn_google {
+  position: relative;
+}
+.form_box .google_icon {
+  height: 23px;
+  position: absolute;
+  left: 10px;
+}
+/* media queries */
+@media screen and (max-width: 992px) {
+  .jumbo_text h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .jumbo {
+    padding: 30px 0;
+  }
+  .jumbo_text p {
+    padding: 10px 0;
+  }
+}
