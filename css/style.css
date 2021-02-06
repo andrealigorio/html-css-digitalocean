@@ -184,10 +184,10 @@ a:hover {
   height: 100%;
 }
 /* Deploy */
-#deploy h2, #deploy h4 {
+#deploy h2, #deploy h4, #developers h2, #developers .ms_p_small, .create_droplets i a {
   color: #031c4e;
 }
-#deploy p, #deploy ul li a {
+#deploy p, #deploy ul li a, #developers p {
   color: #5c6a88;
 }
 .deploy_title p {
@@ -209,10 +209,45 @@ a:hover {
 .deploy_item {
   padding: 10px 5px;
 }
+/* Developers */
+#developers {
+  background-color: #f3f5f9;
+}
+.developers_box p {
+  padding-top: 20px;
+}
+.create_droplets {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.create_droplets img {
+  max-width: 80%;
+}
+.create_droplets i {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.create_droplets i:hover {
+  color: #006aff;
+}
+.developers_box .ms_p_small {
+  font-weight: 600;
+}
+.circle i {
+  color: #006aff;
+  padding: 0 3px;
+  cursor: pointer;
+}
 /* media queries */
 @media screen and (max-width: 992px) {
   .jumbo_text h1 {
     font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
   }
 }
 @media screen and (max-width: 768px) {
@@ -224,4 +259,8 @@ a:hover {
   }
   #brands p:first-of-type {
     font-size: 1em;
+  }
+  .create_droplets {
+    width: 100%;
+  }
 }
