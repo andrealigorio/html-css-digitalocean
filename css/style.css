@@ -7,20 +7,24 @@ body {
   font-family: 'Inter', sans-serif;
   margin-top: 80px;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, .ms_code {
   font-weight: 600;
 }
 h1 {
   font-size: 4em;
 }
 h2 {
-  font-size: 3em;
+  font-size: 2.7em;
+  color: #031c4e;
 }
 h3 {
   font-size: 2em;
 }
 h4 {
   font-size: 1.5em;
+}
+h5 {
+  font-size: 1.2em;
 }
 p {
   font-size: 1.4em;
@@ -184,10 +188,10 @@ a:hover {
   height: 100%;
 }
 /* Deploy */
-#deploy h2, #deploy h4, #developers h2, #developers .ms_p_small, .create_droplets i a {
+#deploy h4, #developers .ms_p_small, .create_droplets i a, #features h4 {
   color: #031c4e;
 }
-#deploy p, #deploy ul li a, #developers p {
+#deploy p, #deploy ul li a, #developers p, #features p {
   color: #5c6a88;
 }
 .deploy_title p {
@@ -196,6 +200,7 @@ a:hover {
 #deploy ul {
   border-left: 1px solid #5c6a88;
   list-style: none;
+  margin-bottom: 30px;
 }
 #deploy ul li {
   padding: 10px;
@@ -206,8 +211,8 @@ a:hover {
 #deploy ul li a:hover {
   color: #006aff;
 }
-.deploy_item {
-  padding: 10px 5px;
+.ms_item {
+  padding: 0 5px 30px;
 }
 /* Developers */
 #developers {
@@ -241,26 +246,74 @@ a:hover {
   padding: 0 3px;
   cursor: pointer;
 }
+/* Features */
+#features h2 {
+  padding-bottom: 30px;
+}
+/* Service */
+#service {
+  background: linear-gradient(180deg, rgba(0,72,197,1) 0%, rgba(0,30,153,1) 100%);
+  color: white;
+}
+#service h2 {
+  color: white;
+  padding-bottom: 30px;
+}
+.service_box {
+  margin: 20px;
+}
+.service_row {
+  padding: 10px 0;
+  font-size: 0.9em;
+}
+.service_row:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+.service_row div:last-child {
+  text-align: right;
+}
+.service_row .ms_code {
+  text-transform: uppercase;
+}
+.service_row span:not(.ms_code){
+  color: #b5c5e8;
+}
+.service_row a {
+  color: #00d5d1;
+  font-weight: normal;
+}
 /* media queries */
 @media screen and (max-width: 992px) {
-  .jumbo_text h1 {
+  h1 {
     font-size: 3em;
   }
   h2 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 }
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
   .jumbo {
     padding: 30px 0;
   }
   .jumbo_text p {
     padding: 10px 0;
   }
+  .jumbo .btn_google, .jumbo .btn_blue {
+    font-size: 1em;
+  }
   #brands p:first-of-type {
     font-size: 1em;
   }
   .create_droplets {
     width: 100%;
+  }
+  .service_row {
+    font-size: 0.7em;
   }
 }
