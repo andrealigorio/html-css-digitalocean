@@ -43,6 +43,9 @@ a:hover {
   text-decoration: none;
   color: #006aff;
 }
+ul {
+  list-style: none;
+}
 /* debug */
 .debug [class*="col-"] {
   border: 1px solid red;
@@ -201,7 +204,6 @@ a:hover {
 }
 #deploy ul {
   border-left: 1px solid #5c6a88;
-  list-style: none;
   margin-bottom: 30px;
 }
 #deploy ul li {
@@ -324,6 +326,34 @@ a:hover {
 #started h2 {
   color: white;
   padding-bottom: 20px;
+}
+/* Footer */
+footer {
+  background-color: #031c4e;
+}
+.logo_footer {
+  padding-bottom: 20px;
+}
+footer h4 {
+  color: white;
+}
+footer p:first-of-type {
+  color: #8b94a9;
+  margin: 0;
+}
+footer p:last-of-type {
+  color: #596786;
+  padding-bottom: 10px;
+}
+footer ul li {
+  padding: 5px 0;
+}
+ footer a {
+  color: #a6adbd;
+  font-weight: normal;
+}
+footer ul i {
+  font-size: 20px;
 }
 /* media queries */
 @media screen and (max-width: 992px) {
