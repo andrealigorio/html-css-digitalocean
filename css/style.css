@@ -355,6 +355,74 @@ footer ul li {
 footer ul i {
   font-size: 20px;
 }
+/* Help button */
+.help_digital {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+}
+.help_btn .btn_cont {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  font-weight: 600;
+  background-color: red;
+  border: 3px solid white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 25px;
+}
+.help_btn {
+  margin-left: 20px;
+  position: relative;
+  border-radius: 5px;
+  background-color: #006aff;
+  padding: 10px 0;
+}
+.help_btn img{
+  height: 50px;
+}
+/* Speech bobble */
+.speech_bubble {
+  position: relative;
+  width: 280px;
+  height: 65px;
+  background: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.speech_bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 9px 0 9px 13px;
+  border-color: transparent white;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -13px;
+  top: 30px;
+}
+
+.speech_bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 9px 0 9px 13px;
+  border-color: transparent #000000;
+  display: block;
+  width: 0;
+  z-index: 0;
+  right: -14px;
+  top: 30px;
+}
+
 /* media queries */
 @media screen and (max-width: 992px) {
   h1 {
@@ -394,5 +462,13 @@ footer ul i {
   }
   .service_row {
     font-size: 0.7em;
+  }
+  .speech_bubble {
+    position: relative;
+    width: 200px;
+    height: 65px;
+  }
+  .speech_bubble span {
+    font-size: 0.8em;
   }
 }
