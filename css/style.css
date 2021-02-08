@@ -5,6 +5,7 @@
 }
 body {
   font-family: 'Inter', sans-serif;
+  font-size: 14px;
   margin-top: 80px;
 }
 h1, h2, h3, h4, h5, .ms_code {
@@ -341,6 +342,9 @@ footer p:first-of-type {
   color: #8b94a9;
   margin: 0;
 }
+footer p:first-of-type::before {
+  content: '\00A9';
+}
 footer p:last-of-type {
   color: #596786;
   padding-bottom: 10px;
@@ -380,6 +384,7 @@ footer ul i {
   border-radius: 5px;
   background-color: #006aff;
   padding: 10px 0;
+  cursor: pointer;
 }
 .help_btn img{
   height: 50px;
