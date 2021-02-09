@@ -335,6 +335,16 @@ footer {
 .logo_footer {
   padding-bottom: 20px;
 }
+/* Animation  */
+.logo_footer img:hover {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+      transform: rotate(1turn);
+  }
+}
+/* fine animation */
 footer h4 {
   color: white;
 }
@@ -386,6 +396,12 @@ footer ul i {
   padding: 10px 0;
   cursor: pointer;
 }
+/* Animation */
+.help_btn:hover {
+  transition: 1s;
+  transform: scale(1.5);
+}
+/* fine animation */
 .help_btn img{
   height: 50px;
 }
